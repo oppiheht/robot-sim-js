@@ -4,9 +4,14 @@
     <script type="text/javascript" src="sim.js"></script>
 </head>
 <body>
-    <textarea id="commands" style="width: 200; height: 200;"></textarea>
-    <button onclick="run()">run</button>
-    <p id="result"></p>
+    <div>
+        <p>
+            <textarea id="commands" style="width: 200; height: 200;"></textarea>
+        </p>
+        <button onclick="run()">run</button>
+        <p id="result"></p>
+        <canvas id="canvas" width="288" height="288" style="border: 1px solid black">Default canvas content</canvas>
+    </div>
 </body>
 
 </html>
