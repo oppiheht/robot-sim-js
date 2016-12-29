@@ -44,7 +44,7 @@ function face(val) {
 }
 
 function drive(distance) {
-    pos.x += distance * Math.sin(angle * Math.PI / 180);
+    pos.x -= distance * Math.sin(angle * Math.PI / 180);
     pos.y += distance * Math.cos(angle * Math.PI / 180);
 }
 
