@@ -1,11 +1,16 @@
 <html>
 
 <head>
+    <script type="text/javascript" src="paths.js"></script>
     <script type="text/javascript" src="sim.js"></script>
 </head>
 <body>
     <div>
         <p>
+            <p>
+                <input id="redRadio" type="radio" name="alliance" value="red" onclick="radioClick(value)" checked>Red</input>
+                <input id="blueRadio" type="radio" name="alliance" value="blue" onclick="radioClick(value)" >Blue</input>
+            <p>
             <textarea id="commands" style="width: 200; height: 200;"></textarea>
         </p>
         <button onclick="run()">run</button>
