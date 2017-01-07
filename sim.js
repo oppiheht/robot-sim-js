@@ -1,4 +1,4 @@
-var FIELD_SIZE = 144;
+var FIELD_SIZE = 142;
 var ROBOT_SIZE = 18;
 var ctx, canvas;
 var robot = {
@@ -72,7 +72,7 @@ function drawField() {
 }
 
 function drawGrid() {
-    for (var i = 0; i <= FIELD_SIZE; i+= FIELD_SIZE / 6) {
+    for (var i = -1; i <= FIELD_SIZE; i+= 144 / 6) {
         ctx.beginPath();
         ctx.moveTo(i, 0);
         ctx.lineTo(i, FIELD_SIZE);
