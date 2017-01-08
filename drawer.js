@@ -1,4 +1,4 @@
-var FIELD_SIZE = 144;
+var FIELD_SIZE = 142;
 var ROBOT_SIZE = 18;
 var ctx, canvas;    
 
