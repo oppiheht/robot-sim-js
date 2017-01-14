@@ -14,6 +14,21 @@ function drawRobot() {
 function drawField() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawGrid();
+    drawCorners();
+}
+
+function drawCorners() {
+    ctx.beginPath();
+    ctx.moveTo(42, 0);
+    ctx.lineTo(0, 42);
+    ctx.closePath();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(FIELD_SIZE - 42, FIELD_SIZE);
+    ctx.lineTo(FIELD_SIZE, FIELD_SIZE - 42);
+    ctx.closePath();
+    ctx.stroke();
 }
 
 function drawGrid() {
