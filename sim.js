@@ -26,7 +26,7 @@ var run = function() {
             drawRobot();
         }
         if (commands[command].includes('drive')) {
-            drive(commands[command].match(/\d+/g));
+            drive(Number(commands[command].match(/-?[0-9]\d*(\.\d+)?/g)));
             drawRobot();
         }
     }
